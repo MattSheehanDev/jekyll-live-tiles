@@ -4,8 +4,7 @@ Jekyll plugin for Windows 8.1 IE live tiles
 ##Setup
 
 1. Copy 'jekyll-live-tiles.rb' to your _plugins folder
-2. Add <code><meta name='msapplication-config' content='/ietemplates/ieconfig.xml' /></code>
-''' 
+2. Add <code>meta name='msapplication-config' content='/ietemplates/ieconfig.xml'</code>
 to your header file
 3. In _config.yml specify
 	- ie_frequency:  - (optional) the frequency of site polling. Options are {30,60,360,720,1440}. Default is 1440 (1 day) 
