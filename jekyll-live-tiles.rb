@@ -87,7 +87,9 @@ module Jekyll
 
     # Generates tile templates
     def generate_templates(site)
-      site.posts.reverse[0..4].each_with_index do |post, index|
+      count = [site.posts.count, 4].min
+
+      site.posts.reverse[0..count].each_with_index do |post, index|
         post.render(site.layouts, site.site_payload)
 
         # Build xml tile templates
