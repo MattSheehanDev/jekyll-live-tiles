@@ -4,9 +4,7 @@ Jekyll plugin for Windows 8.1 IE live tiles
 ##Setup
 
 1. Copy 'jekyll-live-tiles.rb' to your _plugins folder
-2. Add 
-'''
-<b><meta name='msapplication-config' content='/ietemplates/ieconfig.xml' /></b>
+2. Add <code><meta name='msapplication-config' content='/ietemplates/ieconfig.xml' /></code>
 ''' 
 to your header file
 3. In _config.yml specify
