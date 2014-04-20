@@ -80,7 +80,7 @@ module Jekyll
         validate_dir(dest)
 
         File.open("#{dest}#{name}", "w") { |f| f.write(xml.target!) }
-        site.static_files << Jekyll::Xml.new(site, site.source, "/ietemplates/", name)
+        site.pages << Jekyll::Xml.new(site, site.source, "/ietemplates/", name)
 
     end
 
